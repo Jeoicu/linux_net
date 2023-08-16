@@ -1,0 +1,11 @@
+两种方法：
+1.终端使用git下载，但是刚下载的linux没办法去联网。推荐使用第二种方法。
+2.windows访问github,一般国内有加速器，去访问github，https://github.com/wanhebin/clash-for-linux，code,download,得到源码后，拖拽到linux虚拟机中。
+$sudo bash start.sh
+$ source /etc/profile.d/clash.sh
+$ proxy_on
+$ env | grep -E 'http_proxy|https_proxy'
+关闭服务
+$ sudo bash shutdown.sh
+$ proxy_off
+over
